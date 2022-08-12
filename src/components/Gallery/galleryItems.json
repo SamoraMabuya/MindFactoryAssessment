@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "avatar": "../../assets/Bora Bora.png",
+    "category": "Indoor"
+  },
+  {
+    "id": "2",
+    "avatar": "../../assets/London .png",
+    "category": "Outdoor"
+  },
+  {
+    "id": "3",
+    "avatar": "../../assets/New Zealand.png",
+    "category": "Aquatics",
+    "alt": "A"
+  },
+  {
+    "id": "4",
+    "avatar": "../../assets/Paris.png",
+    "category": "Indoor",
+    "alt": "P"
+  },
+  {
+    "id": "5",
+    "avatar": "../../assets/Singapore.png",
+    "category": "Outdoor",
+    "alt": "G"
+  },
+  {
+    "id": "6",
+    "avatar": "../../assets/Thailand.png",
+    "category": "Aquatics",
+    "alt": "F"
+  }
+]

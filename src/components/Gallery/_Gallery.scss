@@ -1,0 +1,48 @@
+@import ".././../styles/typography";
+@import ".././../styles/variables";
+@import ".././../styles/global";
+@import ".././../styles/mixins";
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  justify-content: center;
+  row-gap: 100px;
+  column-gap: 80px;
+  margin-top: 71px;
+  padding-bottom: 100px;
+  .gallery {
+    h2 {
+      margin: 0;
+      font-weight: 500;
+      text-align: start;
+    }
+    img {
+      max-width: 100%;
+      border-radius: $cornerRadius;
+    }
+    desc {
+      text-align: start;
+    }
+  }
+}
+
+.iconGroup {
+  img {
+    margin-right: 10px;
+  }
+}
+.more {
+  margin-left: auto;
+  img {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}
+
+.cardFooter {
+  display: flex;
+}
+.sectionHeading {
+  text-align: center;
+}

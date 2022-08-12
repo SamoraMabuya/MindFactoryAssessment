@@ -1,0 +1,33 @@
+@import "../../styles/typography";
+@import "../../styles/variables";
+@import "../../styles/global";
+@import "../../styles/mixins";
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .card {
+    margin: 5px;
+    float: left;
+    width: 100%;
+    max-width: 270px;
+    border-radius: "10px";
+    background-color: $primary;
+    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    .imageWrapper {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $cornerRadius;
+      background-color: #f0f4fc;
+    }
+  }
+}

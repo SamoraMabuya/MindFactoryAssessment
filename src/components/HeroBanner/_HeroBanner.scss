@@ -1,0 +1,83 @@
+.bannerWrapper {
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .heroContentWrapper {
+    position: absolute;
+    color: $primary;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    inline-size: 600px;
+    overflow-wrap: break-word;
+  }
+  .bannerImg {
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.whiteBanner {
+  background-color: $primary;
+  border-radius: $cornerRadius;
+  width: 100%;
+  padding: 12px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: $textDark;
+      inline-size: unset;
+      margin-right: 20px;
+    }
+    .buttonGroup {
+      button {
+        border-radius: $cornerRadius;
+        padding: 10px;
+        padding-inline: 30px;
+      }
+      .buttonOne {
+        border-color: $secondary;
+        color: $secondary;
+        background: none;
+        margin-right: 10px;
+      }
+      .buttonTwo {
+        border-color: $textDark;
+        color: $primary;
+        background: $textDark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .whiteBanner {
+    text-align: center;
+    padding-bottom: 25px;
+    .content {
+      display: unset;
+      .buttonGroup {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+  .heroContentWrapper {
+    p {
+      inline-size: 300px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "navText": "Home"
+  },
+  {
+    "id": "2",
+    "navText": "About"
+  },
+  {
+    "id": "3",
+    "navText": "Contact"
+  }
+]

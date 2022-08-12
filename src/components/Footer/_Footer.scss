@@ -1,0 +1,39 @@
+@import ".././../styles/typography";
+@import ".././../styles/variables";
+@import ".././../styles/global";
+@import ".././../styles/mixins";
+
+.footerContainer {
+  background-color: #efefef;
+  padding: 15px;
+  display: flex;
+  .copyRight {
+    span {
+      display: flex;
+      width: fit-content;
+    }
+  }
+  .socialIcons {
+    margin-left: auto;
+    img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footerContainer {
+    display: block;
+    .copyRight {
+      span {
+        margin: 0 auto;
+      }
+    }
+    .socialIcons {
+      text-align: center;
+    }
+  }
+}

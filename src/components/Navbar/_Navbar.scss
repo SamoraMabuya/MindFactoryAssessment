@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: $primary;
+  color: $textDark;
+  .Logo {
+    text-decoration: none;
+    color: $textDark;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  .navigation-menu {
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    right: 30px;
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .actionButton {
+      border-radius: $cornerRadius;
+      padding: 10px;
+      border: none;
+      color: $primary;
+      background: $secondary;
+    }
+  }
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: $textDark;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .actionButton {
+    display: none;
+  }
+}
