@@ -1,16 +1,8 @@
-@import ".././../styles/typography";
-@import ".././../styles/variables";
-@import ".././../styles/global";
-@import ".././../styles/mixins";
+@import "../../../styles/mixins";
 
 .galleryContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
-  justify-content: center;
-  row-gap: 100px;
-  column-gap: 80px;
-  margin-top: 71px;
-  padding-bottom: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 10rem));
+  @include cardsContainers;
   .gallery {
     h2 {
       margin: 0;
@@ -45,4 +37,10 @@
 }
 .sectionHeading {
   text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .galleryContainer .gallery {
+    margin: 0 auto;
+    max-width: 80%;
+  }
 }

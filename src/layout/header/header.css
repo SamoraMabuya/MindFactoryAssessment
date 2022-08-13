@@ -1,0 +1,89 @@
+.contactBtn {
+  border: none;
+  color: #ffff;
+  background: #e6007e;
+}
+
+.navigation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #ffff;
+  color: black;
+}
+
+.navigation .Logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.navigation .navigation-menu {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  right: 30px;
+}
+
+.navigation .navigation-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .navigation-menu ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.navigation .navigation-menu .actionButton {
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  color: #ffff;
+  background: #e6007e;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .actionButton {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tabs = ({ handleClick, button, active }) => (
+const TabButtons = ({ handleClick, button, active }) => (
   <div
     className="filterGroup"
   >
@@ -20,4 +20,4 @@ const Tabs = ({ handleClick, button, active }) => (
 
 );
 
-export default Tabs;
+export default TabButtons;

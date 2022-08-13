@@ -1,28 +1,17 @@
 .filterGroup {
   display: flex;
   justify-content: center;
-  text-align: start;
   margin: 0 auto;
 }
 
 .filterGroup button {
-  padding-right: 60px;
+  padding-right: 40px;
+  margin-right: 10px;
   border: none;
   background: none;
 }
 .filterGroup.btn {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.357);
-}
-.filterGroup button p {
-  font-size: 26px;
-  inline-size: unset;
-  overflow-wrap: unset;
-  text-align: start;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  justify-content: start;
-  justify-items: start;
 }
 
 .filterGroup .active {

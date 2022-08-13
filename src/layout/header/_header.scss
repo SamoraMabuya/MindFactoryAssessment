@@ -1,4 +1,10 @@
 @import "../../styles/variables";
+
+.contactBtn {
+  border: none;
+  color: $primary;
+  background: $secondary;
+}
 .navigation {
   position: relative;
   display: flex;
@@ -16,12 +22,12 @@
   }
   .navigation-menu {
     margin-left: auto;
-    display: flex;
     position: relative;
     right: 30px;
     ul {
       display: flex;
       padding: 0;
+      align-items: center;
       li {
         list-style-type: none;
         margin: 0 1rem;
@@ -43,8 +49,8 @@
 .hamburger {
   display: none;
 }
-@media screen and (max-width: 550px) {
-  .navigation {
+@media screen and (max-width: 720px) {
+  .navigation-menu {
     display: none;
   }
   .hamburger {
@@ -60,7 +66,7 @@
     top: 50%;
     right: 25px;
     transform: translateY(-50%);
-    display: none;
+    display: block;
   }
   .actionButton {
     display: none;

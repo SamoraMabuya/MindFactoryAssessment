@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  h1 {
+  header {
     text-align: center;
   }
   p {
@@ -31,23 +31,18 @@
 .whiteBanner {
   background-color: $primary;
   border-radius: $cornerRadius;
-  width: 100%;
   padding: 12px;
   .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    p {
+    .callToAction {
       color: $textDark;
       inline-size: unset;
       margin-right: 20px;
     }
     .buttonGroup {
-      button {
-        border-radius: $cornerRadius;
-        padding: 10px;
-        padding-inline: 30px;
-      }
+      display: flex;
       .buttonOne {
         border-color: $secondary;
         color: $secondary;
@@ -68,10 +63,17 @@
     text-align: center;
     padding-bottom: 25px;
     .content {
-      display: unset;
+      display: block;
       .buttonGroup {
         display: block;
         margin-top: 10px;
+        button {
+          margin-top: 10px;
+        }
+        .buttonOne {
+          margin-right: unset;
+          margin-bottom: 20px;
+        }
       }
     }
   }

@@ -1,11 +1,10 @@
 import React from 'react';
-import '../../styles/styles';
-import headingItems from './headingItems.json';
+import serviceItems from './serviceItems.json';
 
 const paragraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.';
-const HeadingCards = () => (
+const ServiceCards = () => (
   <div className="cardContainer">
-    {headingItems.map((item) => (
+    {serviceItems.map((item) => (
       <div className="card" key={item.id}>
         <div className="imageWrapper">
           <img className="headImg" src={item.avatar} alt="Avatar" />
@@ -19,4 +18,4 @@ const HeadingCards = () => (
     ))}
   </div>
 );
-export default HeadingCards;
+export default ServiceCards;
