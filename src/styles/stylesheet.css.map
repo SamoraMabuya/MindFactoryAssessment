@@ -16,7 +16,7 @@
         "../components/Buttons/ActionButton/_actionButton.scss",
         "../layout/header/_header.scss",
         "_variables.scss",
-        "../layout/footer/_footer.scss",
+        "../layout/Footer/_footer.scss",
         "_typography.scss",
         "_variables.scss",
         "_global.scss",

@@ -9,14 +9,6 @@ const All = 'All';
 const allCategories = [All, ...new Set(galleryItems.map((item) => item.category))];
 const desc = 'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
 
-const reducer = (prevState, newState) => ({ ...prevState, newState });
-
-const initalState = {
-  menuItem: galleryItems,
-  active: All,
-  buttons: allCategories,
-
-};
 const TouristCards = () => {
   const [toggleItems, setToggleItems] = useState(galleryItems);
   const [active, setActive] = useState(All);
